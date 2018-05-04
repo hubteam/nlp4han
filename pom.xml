@@ -5,7 +5,7 @@
 	<groupId>com.lc</groupId>
 	<artifactId>nlp4han</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -13,11 +13,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-    		<groupId>tw.cheyingwu</groupId>
-    		<artifactId>CKIPClient</artifactId>
-    		<version>0.4.3</version>
-	</dependency>
 	</dependencies>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,4 +32,18 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>nlp4han-ml</module>
+		<module>nlp4han-wordseg</module>
+		<module>nlp4han-utils</module>
+		<module>nlp4han-pos</module>
+		<module>nlp4han-dep</module>
+		<module>nlp4han-ner</module>
+		<module>nlp4han-chunk</module>
+		<module>nlp4han-segpos</module>
+		<module>nlp4han-poschunk</module>
+		<module>nlp4han-constituent</module>
+		<module>nlp4han-srl</module>
+		<module>nlp4han-csc</module>
+	</modules>
 </project>
